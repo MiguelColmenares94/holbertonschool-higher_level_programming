@@ -1,2 +1,3 @@
 #!/bin/bash
 python3 -m py_compile $PYFILE
+cat main.pyc | zgrep -c "Best School"
