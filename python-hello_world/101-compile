@@ -1,3 +1,4 @@
 #!/bin/bash
 python3 -m py_compile $PYFILE
-cat *.pyc | zgrep -c "Best School"
+mv __pycache__/*.pyc ./$PYFILEc
+rm -rf __pycache__
