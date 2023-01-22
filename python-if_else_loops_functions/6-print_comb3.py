@@ -10,4 +10,3 @@ for i in range(0, 10):
         else:
             print("{}".format(i), end="")
             print("{}, ".format(a), end="")
-
