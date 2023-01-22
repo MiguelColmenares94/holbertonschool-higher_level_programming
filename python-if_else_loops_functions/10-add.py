@@ -3,7 +3,7 @@
 
 def add(a, b):
 
-    #Add validations just for fun and learn, exercise expect error
+    # Add validations just for fun and learn, exercise expect error
     checkA = isinstance(a, int)
     checkB = isinstance(b, int)
 
