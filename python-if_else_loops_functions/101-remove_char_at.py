@@ -8,3 +8,5 @@ def remove_char_at(str, n):
             pass
         else:
             print("{}".format(str[i]), end="")
+
+    return(1)
