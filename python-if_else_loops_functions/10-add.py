@@ -7,6 +7,6 @@ def add(a, b):
     checkB = isinstance(b, int)
 
     if (checkA and checkB) == 1:
-        result = a + b
+        return(a + b)
     else:
         pass
