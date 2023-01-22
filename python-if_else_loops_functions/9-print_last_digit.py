@@ -3,7 +3,8 @@
 
 def print_last_digit(number):
 
-    if number >= 48 and number <= 57:
-        return(abs(number % 10))
+    check = abs(number % 10)
+    if check >= 48 and check <= 57:
+        return(check)
     else:
         pass
