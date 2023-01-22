@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def add(a, b):
+def pow(a, b):
 
     # Add validations just for fun and learn, exercise expect error
     checkA = isinstance(a, int)
