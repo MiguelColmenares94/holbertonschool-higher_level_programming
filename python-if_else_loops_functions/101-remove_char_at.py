@@ -3,9 +3,9 @@
 
 def remove_char_at(str, n):
 
-        if n <= 0:
-            pass
-        else:
-            str = str[:n] + str[n + 1:]
+    if n <= 0:
+        pass
+    else:
+        str = str[:n] + str[n + 1:]
 
-        print(str)
+    return(str)
