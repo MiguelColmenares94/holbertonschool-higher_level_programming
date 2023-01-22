@@ -5,8 +5,9 @@ for i in range(0, 10):
             a += 1
         elif i >= a:
             a += 1
+        elif i == 8 and a == 9:
+            print("{}{}".format(i, a))
         else:
             print("{}".format(i), end="")
             print("{}, ".format(a), end="")
 
-print("89")
