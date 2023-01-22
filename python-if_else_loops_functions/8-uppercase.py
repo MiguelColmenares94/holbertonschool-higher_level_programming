@@ -4,7 +4,7 @@
 def uppercase(str):
 
     for i in str:
-        if i != NULL:
+        if i != "\0":
             print("{:c}".format((ord(str[i] - 32))), end="")
         else:
             print("\n")
