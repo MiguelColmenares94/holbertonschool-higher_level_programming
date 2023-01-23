@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
 
-    import calculator_1
+    import calculator_1 as mod
 
-    add = calculator_1.add
-    sub = calculator_1.sub
-    mul = calculator_1.mul
-    div = calculator_1.div
+    add = mod.add
+    sub = mod.sub
+    mul = mod.mul
+    div = mod.div
     a = 10
     b = 5
 
