@@ -2,8 +2,7 @@
 if __name__ == "__main__":
 
     import calculator_1
-    from sys import argv
-    from os import exit
+    from sys import argv, exit
 
     a = int(argv[1])
     b = int(argv[3])
