@@ -14,16 +14,16 @@ if __name__ == "__main__":
         exit(1)
 
     if c == "+":
-        print("{:d} {:c} {:d} = {:d}".format(a, c, b, mod.add(a, b)))
+        print("{:d} {:str} {:d} = {:d}".format(a, c, b, mod.add(a, b)))
         exit(0)
     elif c == "-":
-        print("{:d} {:c} {:d} = {:d}".format(a, c, b, mod.sub(a, b)))
+        print("{:d} {:str} {:d} = {:d}".format(a, c, b, mod.sub(a, b)))
         exit(0)
     elif c == "*":
-        print("{:d} {:c} {:d} = {:d}".format(a, c, b, mod.mul(a, b)))
+        print("{:d} {:str} {:d} = {:d}".format(a, c, b, mod.mul(a, b)))
         exit(0)
     elif c == "/":
-        print("{:d} {:c} {:d} = {:d}".format(a, c, b, mod.div(a, b)))
+        print("{:d} {:str} {:d} = {:d}".format(a, c, b, mod.div(a, b)))
         exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
