@@ -12,7 +12,7 @@ if __name__ == "__main__":
     b = int(argv[3])
     c = argv[2]
     mod = calculator_1
-    
+
     if c == "+":
         print("{:d} {} {:d} = {:d}".format(a, c, b, mod.add(a, b)))
         exit(0)
