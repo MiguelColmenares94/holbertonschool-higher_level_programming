@@ -4,15 +4,15 @@ if __name__ == "__main__":
     import calculator_1
     from sys import argv, exit
 
+    if len(argv) != 4:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        exit(1)
+
     a = int(argv[1])
     b = int(argv[3])
     c = argv[2]
     mod = calculator_1
-
-    if len(argv) < 4 or len(argv) > 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-
+    
     if c == "+":
         print("{:d} {} {:d} = {:d}".format(a, c, b, mod.add(a, b)))
         exit(0)
