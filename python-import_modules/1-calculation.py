@@ -3,6 +3,10 @@ if __name__ == "__main__":
 
     import calculator_1
 
+    add = calculator_1.add
+    sub = calculator_1.sub
+    mul = calculator_1.mul
+    div = calculator_1.div
     a = 10
     b = 5
 
