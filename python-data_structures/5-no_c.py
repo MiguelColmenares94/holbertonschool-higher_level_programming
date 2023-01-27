@@ -11,7 +11,7 @@ def no_c(my_string):
             return []
         else:
             for i in range(len(my_string)):
-                my_string.remove(c)
-                my_string.remove(C)
+                if my_string[i] == 'c' or my_string[i] == 'C':
+                    del my_string[i]
 
         return (my_string)
