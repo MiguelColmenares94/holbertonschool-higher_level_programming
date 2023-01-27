@@ -7,11 +7,8 @@ def no_c(my_string):
 
     def no_c(my_string):
 
-        if my_string is None:
-            return []
-        else:
-            for i in range(len(my_string)):
-                if my_string[i] == 'c' or my_string[i] == 'C':
-                    del my_string[i]
+        for i in range(len(my_string)):
+            if my_string[i] == 'c' or my_string[i] == 'C':
+                del my_string[i]
 
-        return (my_string)
+    return (my_string)
