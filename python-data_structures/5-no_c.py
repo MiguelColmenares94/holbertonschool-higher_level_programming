@@ -2,12 +2,12 @@
 
 
 def no_c(my_string):
-    """removes all characters c and C from a string.
+    """ removes all characters c and C from a string
     """
 
-    copy = my_string.copy()
-    for i in range(len(copy)):
-        if copy[i] == chr(99) or copy[i] == chr(67):
-            copy.remove(i)
+    my_list = list(my_string)
+    for i in my_list[0:]:
+        if i == 'c' or i == 'C':
+            my_list.remove(i)
 
-    return (copy)
+    return (my_list)
