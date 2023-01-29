@@ -28,6 +28,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tupB1 = tuple_b[0]
         tupB2 = tuple_b[1]
 
-    newTup = (a1 + b1, a2 + b2)
+    newTup = (tupA1 + tupB1, tupA2 + tupB2)
 
     return (newTup)
