@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
 
     converted_list = []
     rom_list = list(rom_num)
-    for i in range(roman_string):
+    for ch in range(roman_string):
         if roman_string[i] == rom_list[i]:
             converted_list.append(rom_num[i])
 
