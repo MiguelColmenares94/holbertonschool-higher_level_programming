@@ -10,6 +10,6 @@ def uniq_add(my_list=[]):
     n = 0
 
     for i in non_rep:
-        num += i
+        n += i
 
-    return (num)
+    return (n)
