@@ -11,8 +11,9 @@ def roman_to_int(roman_string):
     rom_num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
     converted_list = []
+    rom_list = list(rom_num)
     for i in range(roman_string):
-        if roman_string[i] == rom_num[i]:
+        if roman_string[i] == rom_list[i]:
             converted_list.append(rom_num[i])
 
     return (sum(converted_list))
