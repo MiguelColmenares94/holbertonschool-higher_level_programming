@@ -6,5 +6,5 @@ def number_keys(a_dictionary):
     """
 
     dic_list = list(a_dictionary)
-    keys = len(a_dictionary
+    keys = len(a_dictionary)
     return (keys)
