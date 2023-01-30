@@ -8,14 +8,19 @@ def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or (roman_string is None):
         return (0)
 
-    rom_num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    rnum = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
-    string_to_l = []
-    string_to_l[:0] = roman_string
-    converted_list = []
-    rom_list = list(rom_num)
-    for i in string_to_l:
-        if string_to_l[i] == rom_list[i]:
-            converted_list.append(rom_num[i])
+    num = 0
 
-    return (sum(converted_list))
+    for i in range(len(roman_string)):
+        if rnum.get(roman_string[i], 0) == 0:
+            return (0)
+
+        if (i != (len(roman_string) - 1) and
+                rnum[roman_string[i]] < rnum[roman_string[i + 1]]):
+            num += rnum[roman_string[i]] * -1
+
+        else:
+            num += rnum[roman_string[i]]
+
+        return (num)
