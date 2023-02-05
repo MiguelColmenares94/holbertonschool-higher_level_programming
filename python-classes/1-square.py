@@ -12,5 +12,5 @@ class Square:
             name(str): name of the object.
             size(int): size of the square.
         """
-        self.name = __name
-        self.size = __size
+        self.name = _Square__name
+        self.size = _Square__size
