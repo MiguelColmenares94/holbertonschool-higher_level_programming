@@ -3,17 +3,12 @@
 
 
 class Square:
-    """Defines a square
-    """
+    """Defines a square"""
     def __init__(self, size=0):
         """
-        Args:
-            size(int): size of the square.
-
-        Attributes:
-            Private instance attribute: size
-               - size must be an int
-               - size must be >= 0
+            Args:
+                size (int): size of the square, it's a Private
+                instance attribute
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -23,9 +18,7 @@ class Square:
             self.__size = size
 
     def area(self):
-        """Public instance method: that returns the current square area
-
-        Returns:
-            The area of the square
+        """Public instance Method:
+            Return: the current square area.
         """
         return (area=self.__size ** 2)
