@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a class Square"""
+"""class Square"""
 
 
 class Square:
@@ -12,5 +12,4 @@ class Square:
             name(str): name of the object.
             size(int): size of the square.
         """
-        self.name = _Square__name
-        self.size = _Square__size
+        self.__size = size
