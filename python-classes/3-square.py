@@ -3,12 +3,15 @@
 
 
 class Square:
-    """Defines a square class with some conditions"""
+    """
+    Defines a square class with some conditions
+        Private instance attribute: size
+    """
     def __init__(self, size=0):
         """
+        Method to initialize objects
             Args:
-                size (int): size of the square, it's a Private
-                instance attribute
+                size (int): size of the square
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
