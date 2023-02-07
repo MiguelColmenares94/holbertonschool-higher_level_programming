@@ -4,7 +4,7 @@
 	3
 
 	>>> add_integer(3, -2)
-	-1
+	1
 
 	>>> add_integer(1.8, 5.3)
 	6
@@ -35,11 +35,11 @@
 	Traceback (most recent call last):
 	ValueError: cannot convert float NaN to integer
 
-	>>> add_integer(-float('NaN))
+	>>> add_integer(-float('NaN'))
 	Traceback (most recent call last):
 	ValueError: cannot convert float NaN to integer
 
-	>>> add_integer(float('inf))
+	>>> add_integer(float('inf'))
 	Traceback(most recent call last):
 	OverflowError: cannot convert float infinity to integer
 
