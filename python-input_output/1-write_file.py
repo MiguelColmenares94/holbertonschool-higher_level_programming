@@ -12,6 +12,9 @@ def number_of_lines(filename=""):
     Args:
         filename: filename
 
+    Returns:
+        number of lines of the text file
+    
     Raises
         Exception: when the file can be opened
 
