@@ -1,26 +1,18 @@
 #!/usr/bin/python3
 """
-Module that contains a function that returns the number of lines
-    of a text file
+This program writes in a file if doesn't exists create the file
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """
-    Function that reads from a file and prints its number of lines
-
+    Write in a file, if doesn't exists create the file
     Args:
-        filename: filename
-
-    Returns:
-        number of lines of the text file
-    
-    Raises
-        Exception: when the file can be opened
-
+      - filename: string
+      - text: string
     """
-    n_lines = 0
-    with open(filename, 'r', encoding="utf-8") as f:
-        for line in f:
-            n_lines += 1
-    return n_lines
+
+    with open(filename, mode="w", encoding="utf-8") as _file:
+        _file.write(text)
+
+    return (len(text))
