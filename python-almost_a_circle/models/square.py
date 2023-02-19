@@ -13,3 +13,14 @@ class Square(Rectangle):
         string = "[Square] ({:}) {:}/{:} - {:}"
         string = string.format(self.id, self.x, self.y, self.width)
         return string
+
+    @property
+    def size(self):
+        """Getter for size"""
+        return self.width
+
+    @size.setter
+    def size(self, new_value):
+        """Setter for size"""
+        self.width = new_value
+        self.height = new_value
