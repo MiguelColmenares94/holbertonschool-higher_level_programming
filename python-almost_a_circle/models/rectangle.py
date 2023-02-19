@@ -91,5 +91,5 @@ class Rectangle(Base):
         if (type(new_value) is not int):
             raise TypeError("y must be an integer")
         elif (new_value < 0):
-            raise ValueError("y must be >=0")
+            raise ValueError("y must be >= 0")
         self.__y = new_value
