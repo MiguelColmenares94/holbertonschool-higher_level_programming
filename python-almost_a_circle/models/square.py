@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Method that define Square class"""
-from models.base import Base
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
