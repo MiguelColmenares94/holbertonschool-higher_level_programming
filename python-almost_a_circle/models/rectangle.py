@@ -3,7 +3,7 @@
 This module contains the class Rectangle that inherits from Base
 """
 
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
