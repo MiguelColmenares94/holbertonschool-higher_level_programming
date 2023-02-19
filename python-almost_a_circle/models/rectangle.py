@@ -116,7 +116,7 @@ class Rectangle(Base):
                                self.height)
         return string
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assing an argument to each attribute"""
         args_list = ["id", "width", "height", "x", "y"]
         if args and args[0] is not None:
