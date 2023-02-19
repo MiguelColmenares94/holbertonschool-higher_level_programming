@@ -38,3 +38,9 @@ class Square(Rectangle):
         elif kwargs is not None:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """Method that returns the dictionary representation of a Rectangle"""
+        key_list = ["id", "size", "x", "y"]
+        value_list = [self.id, self.width, self.x, self.y]
+        return dict(zip(key_list, value_list))
