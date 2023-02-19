@@ -113,7 +113,7 @@ class Rectangle(Base):
         """Human readable string for understanding Rectangle instance"""
         string = "[Rectangle] ({}) {}/{} - {}/{}"
         string = string.format(self.id, self.x, self.y, self.width,
-                self.height)
+                               self.height)
         return string
 
     def update(self, *args, **kwargs):
