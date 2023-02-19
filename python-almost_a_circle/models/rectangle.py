@@ -89,5 +89,5 @@ class Rectangle(Base):
         Setter for private attribute y
         """
         if new_value < 0:
-            raise Value error ("y must be >=0")
+            raise ValueError ("y must be >=0")
         self.__y = new_value
