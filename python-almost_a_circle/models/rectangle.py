@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-"""
-This module contains the class Rectangle that inherits from Base
-"""
+"""This module contains the class Rectangle that inherits from Base"""
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle class, this class inherits from Base
-    """
+    """Rectangle class, this class inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
@@ -30,9 +26,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """
-        Getter for private attribute width
-        """
+        """Getter for private attribute width"""
         return (self.__width)
 
     @width.setter
@@ -46,9 +40,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """
-        Getter for private attribute height
-        """
+        """Getter for private attribute height"""
         return self.__height
 
     @height.setter
@@ -62,9 +54,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """
-        Getter for private attribute x
-        """
+        """Getter for private attribute x"""
         return self.__x
 
     @x.setter
@@ -78,9 +68,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """
-        Getter for private attribute y
-        """
+        """Getter for private attribute y"""
         return self.__y
 
     @y.setter
