@@ -7,6 +7,10 @@ from base import Base
 
 
 Class Rectangle(Base):
+    """
+    Rectangle class, this class inherits from Base
+    """
+
     def def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__
         super().id
@@ -30,7 +34,7 @@ Class Rectangle(Base):
     @height.setter
     def height():
         self.__height = height
-    
+
     @property
     def x():
         return = self.__x
