@@ -24,8 +24,7 @@ class Base:
         of list_dictionaries
         - list_dictionary: must be a list of dictionary
         - Return: string of dictionary in json format"""
-        if list_dictionaries is None:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        else:
             string = json.dumps(list_dictionaries)
             return string
