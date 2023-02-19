@@ -36,6 +36,11 @@ class Rectangle(Base):
         Args:
             -new_value(int)
         """
+        if new_value is not type(int):
+            raise TypeError ("width must be an integer")
+
+        if width <= 0:
+            raise ValueError ("width must be > 0")
         self.__width = new_value
 
     @property
@@ -50,6 +55,11 @@ class Rectangle(Base):
         Args:
             -new_value(int)
         """
+        if new_value is not type(int):
+            raise TypeError ("height must be an integer")
+
+        if width <= 0:
+            raise ValueError ("height must be > 0")
         self.__height = new_value
 
     @property
@@ -64,6 +74,8 @@ class Rectangle(Base):
         Args:
             -new_value(int)
         """
+        if x < 0:
+            raise ValueError ("x must be >= 0")
         self.__x = new_value
 
     @property
@@ -76,4 +88,6 @@ class Rectangle(Base):
         """
         Setter for private attribute y
         """
+        if y < 0;
+            raise Value error ("y must be >=0")
         self.__y = new_value
