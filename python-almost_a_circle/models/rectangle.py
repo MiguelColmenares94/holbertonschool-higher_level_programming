@@ -64,7 +64,7 @@ class Rectangle(Base):
         Args:
             -new_value(int)
         """
-        self.__x = x
+        self.__x = new_value
 
     @property
     def y(self):
@@ -76,4 +76,4 @@ class Rectangle(Base):
         """
         Setter for private attribute y
         """
-        self.__y = y
+        self.__y = new_value
