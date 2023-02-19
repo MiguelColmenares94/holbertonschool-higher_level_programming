@@ -3,10 +3,10 @@
 This module contains the class Rectangle that inherits from Base
 """
 
-from models.base import Base
+from base import Base
 
 
-Class Rectangle(Base):
+class Rectangle(Base):
     """
     Rectangle class, this class inherits from Base
     """
