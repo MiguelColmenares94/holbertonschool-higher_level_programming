@@ -115,3 +115,18 @@ class Rectangle(Base):
         string = string.format(self.id, self.x, self.y, self.width,
                                self.height)
         return string
+
+    def update(self, *args):
+        """Assing an argument to each attribute"""
+        args_list = ["id", "width", "height", "x", "y"]
+        if args and args[0] is not None:
+            if len(args) > len(args_list):
+                max_len = len(args_list)
+            else:
+                max_len = len(args)
+            for i in range(max_len):
+                setattr(self, args_list[i], args[i])
+        elif kwargs is not None:
+            for key in kwargs:
+                if hasattr(self, key) is True:
+                    setattr(self, key, kwargs[key])
