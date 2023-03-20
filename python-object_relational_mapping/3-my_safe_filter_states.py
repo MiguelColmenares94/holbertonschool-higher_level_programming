@@ -31,7 +31,7 @@ if __name__ == '__main__':
     cursor = db.cursor()
 
     cursor.execute("SELECT * FROM states \
-                    WHERE name = '{:s}' ORDER BY id ASC;".format(searched))
+                    WHERE name = '{:s}' ORDER BY id ASC;".format(querry))
 
     result_query = cursor.fetchall()
 
