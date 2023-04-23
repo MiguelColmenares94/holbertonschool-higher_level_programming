@@ -8,7 +8,7 @@ if (Number.isNaN(Number(process.argv[2]))) {
 } else {
   for (counterSize = 0; counterSize < process.argv[2]; counterSize++) {
     for (counterLine = 0; counterLine < process.argv[2]; counterLine++) {
-      process.stdout.write('#');
+      process.stdout.write('X');
     }
     console.log();
   }
