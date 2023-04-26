@@ -13,7 +13,7 @@ class Square extends Rectangle {
     if (this.width && this.height) {
       for (counterSize = 0; counterSize < this.height; counterSize++) {
         for (counterLine = 0; counterLine < this.width; counterLine++) {
-          if (c === 'c' || c === 'C') {
+          if (c) {
             process.stdout.write(c);
           } else {
             process.stdout.write('X');
