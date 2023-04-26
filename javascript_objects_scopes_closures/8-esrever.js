@@ -6,8 +6,10 @@ exports.esrever = function (list) {
   let counter = 0;
 
   for (counter; counter <= list.length; counter++) {
-    reversed[reversedLength] = list[counter];
-    reversedLength--;
+    if (list[counter] !== undefined) {
+      reversed[reversedLength] = list[counter];
+      reversedLength--;
+    }
   }
 
   return (reversed);
