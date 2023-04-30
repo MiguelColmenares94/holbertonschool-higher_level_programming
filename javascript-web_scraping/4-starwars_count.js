@@ -1,27 +1,21 @@
 #!/usr/bin/node
-
-const request = require('request');
 const url = process.argv[2];
-let count = 0;
-let characterId = 18;
+const request = require('request');
+const id = '18';
 
 request(url, function (error, response, body) {
-  if (!error && response.statusCode === 200) {
-    const data = JSON.parse(body);
-
-    /*  Another way to do it: 
-    *const count = data.results.characters.filter(url => url.includes('/18/')).length;
-    */
-
-    data.results.forEach(function (movie) {
-     if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/${characterId}/`)) {
-        count++;
-       }
-     });
-     
-
-    console.log(count);
+  if (error) {
+    console.error('error:', error);
   } else {
-    console.log('Usage: scriptName URL');
+    const jsonBody = JSON.parse(body);
+    let counter = 0;
+    for (const res of jsonBody.results) {
+      for (const char of res.characters) {
+        if (char.search(id) > 0) {
+          counter++;
+        }
+      }
+    }
+    console.log(counter);
   }
 });
