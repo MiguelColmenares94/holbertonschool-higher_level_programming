@@ -1,12 +1,13 @@
 #!/usr/bin/node
 
 const request = require('request');
+const url = process.argv[2];
+let count = 0;
+let characterId = 18;
 
-request(process.argv[2], function (error, response, body) {
+request(url, function (error, response, body) {
   if (!error && response.statusCode === 200) {
     const data = JSON.parse(body);
-    let count = 0;
-    let characterId = 18;
 
     /*  Another way to do it: 
     *const count = data.results.characters.filter(url => url.includes('/18/')).length;
